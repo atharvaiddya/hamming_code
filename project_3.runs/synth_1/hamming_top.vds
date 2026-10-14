@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Oct 12 18:15:50 2026
-# Process ID: 18456
+# Start of session at: Wed Oct 14 17:55:17 2026
+# Process ID: 22500
 # Current directory: C:/Users/Vaibhav/project_3/project_3.runs/synth_1
 # Command line: vivado.exe -log hamming_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hamming_top.tcl
 # Log file: C:/Users/Vaibhav/project_3/project_3.runs/synth_1/hamming_top.vds
@@ -12,7 +12,7 @@
 # Running On: LAPTOP-7VV5KI9H, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 4, Host memory: 8343 MB
 #-----------------------------------------------------------
 source hamming_top.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 450.410 ; gain = 183.238
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 450.375 ; gain = 181.473
 Command: read_checkpoint -auto_incremental -incremental C:/Users/Vaibhav/project_3/project_3.srcs/utils_1/imports/synth_1/hamming_top.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Vaibhav/project_3/project_3.srcs/utils_1/imports/synth_1/hamming_top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -25,15 +25,18 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17012
+INFO: [Synth 8-7075] Helper process launched with PID 2140
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1281.613 ; gain = 440.656
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1281.285 ; gain = 439.570
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'hamming_top' [C:/Users/Vaibhav/Downloads/Hamming_Code_Using_Verilog-main/Hamming_Code_Using_Verilog-main/hamming_top.v:4]
 INFO: [Synth 8-6157] synthesizing module 'hamming_code_encoder' [C:/Users/Vaibhav/Downloads/Hamming_Code_Using_Verilog-main/Hamming_Code_Using_Verilog-main/hamming_code_encoder.v:2]
 INFO: [Synth 8-6155] done synthesizing module 'hamming_code_encoder' (0#1) [C:/Users/Vaibhav/Downloads/Hamming_Code_Using_Verilog-main/Hamming_Code_Using_Verilog-main/hamming_code_encoder.v:2]
-INFO: [Synth 8-6157] synthesizing module 'hamming_code_decoder' [C:/Users/Vaibhav/Downloads/Hamming_Code_Using_Verilog-main/Hamming_Code_Using_Verilog-main/hamming_code_decoder.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'hamming_code_decoder' (0#1) [C:/Users/Vaibhav/Downloads/Hamming_Code_Using_Verilog-main/Hamming_Code_Using_Verilog-main/hamming_code_decoder.v:2]
+INFO: [Synth 8-6157] synthesizing module 'hamming_code_decoder' [C:/Users/Vaibhav/Downloads/Hamming_Code_Using_Verilog-main/Hamming_Code_Using_Verilog-main/hamming_code_decoder.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'hamming_code_decoder' (0#1) [C:/Users/Vaibhav/Downloads/Hamming_Code_Using_Verilog-main/Hamming_Code_Using_Verilog-main/hamming_code_decoder.v:4]
+INFO: [Synth 8-226] default block is never used [C:/Users/Vaibhav/Downloads/Hamming_Code_Using_Verilog-main/Hamming_Code_Using_Verilog-main/hamming_top.v:71]
+INFO: [Synth 8-226] default block is never used [C:/Users/Vaibhav/Downloads/Hamming_Code_Using_Verilog-main/Hamming_Code_Using_Verilog-main/hamming_top.v:81]
+INFO: [Synth 8-226] default block is never used [C:/Users/Vaibhav/Downloads/Hamming_Code_Using_Verilog-main/Hamming_Code_Using_Verilog-main/hamming_top.v:97]
 INFO: [Synth 8-6155] done synthesizing module 'hamming_top' (0#1) [C:/Users/Vaibhav/Downloads/Hamming_Code_Using_Verilog-main/Hamming_Code_Using_Verilog-main/hamming_top.v:4]
 WARNING: [Synth 8-3917] design hamming_top has port led[15] driven by constant 0
 WARNING: [Synth 8-3917] design hamming_top has port led[14] driven by constant 0
@@ -49,59 +52,117 @@ WARNING: [Synth 8-7129] Port sw[15] in module hamming_top is either unconnected 
 WARNING: [Synth 8-7129] Port sw[14] in module hamming_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[13] in module hamming_top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1388.680 ; gain = 547.723
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1389.395 ; gain = 547.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1388.680 ; gain = 547.723
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1389.395 ; gain = 547.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1388.680 ; gain = 547.723
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1389.395 ; gain = 547.680
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1388.680 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1389.395 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Vaibhav/Downloads/boolean.xdc]
-Finished Parsing XDC File [C:/Users/Vaibhav/Downloads/boolean.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Vaibhav/Downloads/boolean.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hamming_top_propImpl.xdc].
+Parsing XDC File [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1[0]'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1[1]'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1[2]'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_rxd'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_txd'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_clk_n'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_clk_p'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_n[0]'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_n[1]'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_n[2]'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_p[0]'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_p[1]'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_p[2]'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'left_audio_out'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'right_audio_out'. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hamming_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/hamming_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1391.652 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1439.117 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1391.652 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1439.117 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1391.652 ; gain = 550.695
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1439.117 ; gain = 597.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1391.652 ; gain = 550.695
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1439.117 ; gain = 597.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1391.652 ; gain = 550.695
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1439.117 ; gain = 597.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1391.652 ; gain = 550.695
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1439.117 ; gain = 597.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input   32 Bit       Adders := 1     
 	   2 Input    3 Bit       Adders := 1     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 2     
@@ -109,7 +170,12 @@ Detailed RTL Component Info :
 	   5 Input      1 Bit         XORs := 1     
 	   4 Input      1 Bit         XORs := 2     
 +---Muxes : 
+	   2 Input    8 Bit        Muxes := 3     
+	  13 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
 	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -136,29 +202,32 @@ WARNING: [Synth 8-3917] design hamming_top has port led[9] driven by constant 0
 WARNING: [Synth 8-3917] design hamming_top has port led[8] driven by constant 0
 WARNING: [Synth 8-3917] design hamming_top has port led[7] driven by constant 0
 WARNING: [Synth 8-3917] design hamming_top has port RGB0[2] driven by constant 0
+WARNING: [Synth 8-3917] design hamming_top has port D0_SEG[7] driven by constant 1
+WARNING: [Synth 8-3917] design hamming_top has port D1_SEG[7] driven by constant 1
+WARNING: [Synth 8-3917] design hamming_top has port D1_SEG[6] driven by constant 1
 WARNING: [Synth 8-7129] Port sw[15] in module hamming_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[14] in module hamming_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[13] in module hamming_top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1391.652 ; gain = 550.695
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1439.117 ; gain = 597.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1391.652 ; gain = 550.695
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1439.117 ; gain = 597.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1391.652 ; gain = 550.695
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1439.117 ; gain = 597.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1391.652 ; gain = 550.695
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1439.117 ; gain = 597.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -176,37 +245,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1400.672 ; gain = 559.715
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1439.117 ; gain = 597.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1400.672 ; gain = 559.715
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1439.117 ; gain = 597.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1400.672 ; gain = 559.715
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1439.117 ; gain = 597.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1400.672 ; gain = 559.715
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1439.117 ; gain = 597.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1400.672 ; gain = 559.715
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1439.117 ; gain = 597.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1400.672 ; gain = 559.715
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1439.117 ; gain = 597.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -219,36 +288,44 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |LUT2 |     3|
-|2     |LUT4 |     5|
-|3     |LUT5 |     3|
-|4     |LUT6 |     4|
-|5     |IBUF |    13|
-|6     |OBUF |    19|
-+------+-----+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |     1|
+|4     |LUT2   |     6|
+|5     |LUT3   |     8|
+|6     |LUT4   |     6|
+|7     |LUT5   |     8|
+|8     |LUT6   |    16|
+|9     |FDRE   |    17|
+|10    |IBUF   |    14|
+|11    |OBUF   |    43|
++------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1400.672 ; gain = 559.715
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1439.117 ; gain = 597.402
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1400.672 ; gain = 556.742
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1400.672 ; gain = 559.715
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 1439.117 ; gain = 547.680
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1439.117 ; gain = 597.402
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1413.727 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1439.117 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1417.379 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1439.117 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: ac28bc87
+Synth Design complete | Checksum: 5bb29449
 INFO: [Common 17-83] Releasing license: Synthesis
-25 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+30 Infos, 49 Warnings, 19 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 1417.379 ; gain = 963.977
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 1417.379 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1439.117 ; gain = 984.770
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1439.117 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Vaibhav/project_3/project_3.runs/synth_1/hamming_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file hamming_top_utilization_synth.rpt -pb hamming_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Oct 12 18:17:06 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 14 17:55:59 2026...

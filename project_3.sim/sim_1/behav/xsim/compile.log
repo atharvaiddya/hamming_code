@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Vaibhav/Downloads/Hamming_Code_Using_Verilog-main/Hamming_Code_Using_Verilog-main/hamming_code_decoder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hamming_code_decoder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Vaibhav/Downloads/Hamming_Code_Using_Verilog-main/Hamming_Code_Using_Verilog-main/hamming_decode_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hamming_decode_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Vaibhav/project_3/project_3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
