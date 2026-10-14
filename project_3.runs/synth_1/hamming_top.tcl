@@ -100,8 +100,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Vaibhav/Downloads/boolean.xdc
-set_property used_in_implementation false [get_files C:/Users/Vaibhav/Downloads/boolean.xdc]
+read_xdc C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc
+set_property used_in_implementation false [get_files C:/Users/Vaibhav/project_3/project_3.srcs/constrs_1/new/boolean.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
